@@ -1,5 +1,5 @@
-let arr = ['car', 5, 'bar', 88, 'jeansa', -8, 51, 'sky', 888, 'jeansa'];
 
+ let arr=["Star",1,true,"Machine",4,-8,"many","Star"]
 let count = 0;
 
 let prev;
@@ -10,6 +10,7 @@ for (let i = 0; i < arr.length && count <= 1; i++) {
   arr.forEach(e => {
     if (e === prev) {
       count++;
+      
     }
   });
 }
@@ -20,5 +21,6 @@ if (count == 1) {
   console.log(`All items are unique`);
 }
 else {
+  console.log(count);
   console.log(`All items are not unique`);
 }
